@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Belajar Form</title>
+</head>
+<body>
+    <div class="container">
+        <form id="biodataform" action="" method="post">
+            <h2>FORMULIR BIODATA DIRI</h2>
+            <label for="name">Nama Lengkap</label>
+            <input 
+            type="text" 
+            name="alamat" 
+            id="name" 
+            placeholder="Masukkan Nama"
+            required
+            />
+            </label>
+            
+            <label for="alamat">Alamat</label>
+            <input 
+            type="text" 
+            name="alamat" 
+            id="Alamat" 
+            placeholder="Masukkan Alamat"
+            required
+            />
+        </label>
+            <label for="Hobi">Hobi</label>
+            <input 
+            type="text" 
+            name="Hobi" 
+            id="Hobi" 
+            placeholder="Masukkan Hobi"
+            required
+            />
+            
+            <label for="Keterangan">Keterangan</label>
+            <input 
+            type="text" 
+            name="Keterangan" 
+            id="Keterangan" 
+            placeholder="Masukkan Keterangan"
+            required 
+            />
+
+            <label for="country">Negara</label>
+            <select name="country" id="country">
+                <option value="Indonesia">Indonesia</option>
+                <option value="Russia">Russia</option>
+                <option value="Japan">Japan</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Singapore">Singapore</option>
+            </select>
+            <label for="Gender">Gender</label>
+            <select name="Gender" id="Gender">
+                <option value="Laki-Laki">Laki-Laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+
+    <div class="container-output" id="output">
+        <ul>
+            <li id="username-output"></li>
+            <li id="alamat-output"></li>
+            <li id="Hobi-output"></li>
+            <li id="Keterangan-output"></li>
+            <li id="country-output"></li>
+            <li id="Gender-output"></li>
+        </ul>
+    </div>
+
+    <script src="function.js"></script>   
+</body>
+</html>
+
